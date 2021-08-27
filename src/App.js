@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-import Auth from './components/Auth'
+import AuthClass from './components/AuthClass'
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         loggedIn ?
           <button style={{ padding: '1em' }} onClick={() => setLoggedIn(false)}>Logout</button>
           :
-          <Auth loggedIn={loggedIn} setLoggedIn={setLoggedIn} setIsClass={setIsClass}  />
+          <AuthClass loggedIn={loggedIn} setLoggedIn={setLoggedIn} setIsClass={setIsClass}  />
       }
     </div>
   );
